@@ -1,21 +1,86 @@
-# the composer package lock file and install directory
-# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# /composer.lock
-/fuel/vendor
+# Arquivo .gitignore essencial para projetos Front-End (Node/JS)
 
-# the fuelphp document
-/docs/
+# ------------------------------------
+# 1. DEPENDÊNCIAS E INSTALAÇÕES
+# ------------------------------------
+# Node.js / NPM (Exclui a pasta onde ficam as bibliotecas instaladas)
+/node_modules
 
-# you may install these packages with `oil package`.
-# http://fuelphp.com/docs/packages/oil/package.html
-# /fuel/packages/auth/
-# /fuel/packages/email/
-# /fuel/packages/oil/
-# /fuel/packages/orm/
-# /fuel/packages/parser/
+# Arquivos de log do npm, yarn, pnpm
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.yarn/cache
 
-# dynamically generated files
-/fuel/app/logs/*/*/*
-/fuel/app/cache/*/*
-/fuel/app/config/crypt.php
+# Logs de teste e cobertura (se usar Jest/Mocha)
+/coverage
+/.nyc_output
+/test-results.xml
+
+# ------------------------------------
+# 2. ARQUIVOS DE BUILD/DISTRIBUIÇÃO
+# ------------------------------------
+# Pasta onde o projeto é compilado para produção (geralmente dist ou build)
+/dist
+/build
+/out
+
+# Arquivos gerados por bundlers (Webpack, Rollup, Parcel, Vite, etc.)
+/public/build
+*.tsbuildinfo
+.next/ # Next.js
+.nuxt/ # Nuxt.js
+.svelte-kit/ # SvelteKit
+.angular/ # Angular
+
+# ------------------------------------
+# 3. ARQUIVOS TEMPORÁRIOS E DE CONFIGURAÇÃO PESSOAL
+# ------------------------------------
+# Variáveis de ambiente secretas (MUITO IMPORTANTE)
+.env
+.env.local
+.env.*.local
+
+# Arquivos de configuração de IDEs (Visual Studio Code, JetBrains, etc.)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de backup e temporários (Word, Excel, etc.)
+*~
+#*#
+
+# ------------------------------------
+# 4. FIGURAS, VÍDEOS E OUTROS BINÁRIOS
+# ------------------------------------
+# Figuras comprimidas e binários gerados ou grandes que não devem ser versionados
+# IMPORTANTE: Se o seu repositório rastrear arquivos .docx (com LFS), não exclua.
+# Mas a regra geral é excluir arquivos temporários grandes.
+
+# Arquivos de imagens (temporários, caches ou grandes que não são assets primários)
+# Se suas imagens são ASSETS (que DEVEM ser versionados), remova estas linhas.
+# Caso contrário, servem para ignorar imagens criadas automaticamente ou caches.
+*.png
+*.jpg
+*.gif
+*.png.bak
+*.jpg.bak
+*.gif.bak
+*.webp.bak
+
+# Caches de imagens
+.cache
+/tmp
+
+# Arquivos gerados pelo sistema (Mac)
+.DS_Store
+
+# ------------------------------------
+# 5. ARQUIVOS LOCAIS DO GIT
+# ------------------------------------
+# Exclui arquivos de indexação local que podem ser grandes
+.git/
+.git-credentials
