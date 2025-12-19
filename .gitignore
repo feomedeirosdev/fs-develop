@@ -71,6 +71,8 @@ yarn-error.log*
 *.gif.bak
 *.webp.bak
 
+*.pdf
+
 # Caches de imagens
 .cache
 /tmp

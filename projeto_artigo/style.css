@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+/* "Bebas Neue" "Roboto Flex" */
+
+:root {
+    /* Tipografia */
+    --fb: "Roboto Flex", sans-serif;
+    --ft: "Bebas Neue", sans-serif;
+
+    /* Paleta de Cores */
+
+    /* Azul (Petróleo/Aço) */
+    /* --cd: #000000;
+    --cm: #808080;
+    --cl: #FFFFFF; */
+
+    /* Paleta Deep Slate & Gold */
+    /* --cd: #0D1117; 
+    --cm: #C5A021; 
+    --cl: #E6EDF3;  */
+
+    /* Azul (Petróleo/Aço) */
+    --cd: #0F1C2E;
+    --cm: #4682B4;
+    --cl: #D1D9E1;
+}
+
+*, *::before, *::after {box-sizing: border-box;}
+* {margin: 0; padding: 0; }
+
+body {
+    background-color: var(--cm);
+    color: var(--cd);
+    font-family: var(--fb);
+    text-align: justify;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cd), var(--cm), var(--cl));
+    padding: 15px 0px 5px 0px;
+    box-shadow: 0px 3px 3px var(--cd);
+}
+
+header p {
+    text-align: left;
+    font-family: var(--ft);
+}
+
+header > div {
+    max-width: 800px;
+    margin: auto;;
+}
+
+main {
+    background-color: var(--cl);
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 3px 3px 3px var(--cd);
+}
+
+abbr {text-decoration: none;}
+
+main > article > h1 {
+    /* background-color: red; */
+    font-family: var(--ft), sans-serif;
+    font-size: 2.3em;
+    text-align: left;
+    padding: 30px 20px 10px;
+    color: var(--cm);
+    /* text-shadow: 1px 1px 1px var(--cd); */
+}
+
+main > article > p {
+    /* background-color: red; */
+    padding: 5px 20px 5px;
+    color: var(--cd);
+    font-size: 1.2em;
+}
+
+main > article > p > strong {
+    /* background-color: red; */
+    color: var(--cd);
+    font-size: 1.2em;
+    font-weight: normal;
+    font-style: italic;
+}
+
+aside > h3 {
+    /* background-color: green; */
+    font-family: var(--ft), sans-serif;
+    font-size: 1.5em;
+    padding: 10px 0px 20px 20px;
+    /* color: var(--cm);
+    text-shadow: 1px 1px 1px var(--cd); */
+}
+
+aside > ol {
+    /* background-color: green; */
+    padding: 0px 20px 15px;
+    list-style-position: inside;
+    line-height: 1.5em;
+}
+
+footer {
+    background-color: var(--cd);
+    color: var(--cl);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+/* CLASSES */
+
+.lvl1 {
+    padding: 15px 0px 0px 0px;
+    color: var(--cl);
+    text-shadow: 1px 1px 1px var(--cd);
+    font-size: 2.5em;
+}
+
+.lvl2 {
+    padding: 0px;
+    font-size: 2em;
+}
+
+.abstract {
+    background-color: var(--cd);
+    color: var(--cl);
+    margin: 30px 20px 40px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px var(--cd);
+    line-height: 1.5em;
+}
+
+.sections {
+    /* background-color: red; */
+    margin-bottom: 20px;
+}
+
+.sections h2 {
+    font-family: var(--ft), sans-serif;
+    background-image: linear-gradient(to right, var(--cm), transparent);
+    font-size: 1.5em;
+    padding: 5px 20px 2px 20px;
+    margin: 5px 20px 0px 20px;
+}
+
+.sections h3 {
+    background-image: linear-gradient(to left, var(--cm), transparent);
+    font-size: 1.2em;
+    font-family: var(--ft), sans-serif;
+    color: var(--cd);
+    /* text-shadow: 0px 0px 1px var(--cd); */
+    padding: 5px 20px 2px 20px;
+    margin: 10px 20px 0px 20px;
+}
+
+.sections p {
+    line-height: 1.5em;
+    padding: 10px 20px 0px 20px;
+    text-indent: 20px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.links {
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: normal;
+}
