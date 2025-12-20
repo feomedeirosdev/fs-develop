@@ -1,24 +1,36 @@
-/* ==========================================================================
+/* ================================
    1. BASE (Configurações Globais)
-   ========================================================================== */
+   ================================ */
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&family=VT323&display=swap');
 
 :root {
-    --fb: "Roboto Flex", sans-serif;
-    --ft: "Bebas Neue", sans-serif;
+    /* Fontes */
+        /* --fb: "Roboto Flex", sans-serif;
+        --ft: "Bebas Neue", sans-serif; */
+    /* Tipografia Matrix */
+        --fb: "JetBrains Mono", monospace;
+        --ft: "JetBrains Mono", monospace;
 
-    /* Sua paleta de Azul Metálico */
-    --scd: #0F1C2E;
-    --scm: #4682B4;
-    --scl: #D1D9E1;
+    /* Azul-metálico*/
+        /* --scd: #0F1C2E;
+        --scm: #4682B4;
+        --scl: #D1D9E1; */
+    /* Tons-de-cinza */
+        /* --scd: #000000;
+        --scm: #808080;
+        --scl: #FFFFFF; */
+    /* Matrix */
+        --scd: #00FF41;
+        --scm: #A0A0A0;
+        --scl: #000000;
+
 }
 
-*, *::before, *::after { box-sizing: border-box; }
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    margin: 0;
-    padding: 0;
     background-color: var(--scm);
     color: var(--scd);
     font-family: var(--fb);
@@ -26,9 +38,9 @@ body {
     line-height: 1.6;
 }
 
-/* ==========================================================================
+/* =====================================
    2. LAYOUT (Estruturas de containers)
-   ========================================================================== */
+   ===================================== */
 .l-main-container {
     background-color: var(--scl);
     max-width: 800px;
@@ -37,13 +49,13 @@ body {
     min-height: 100vh;
 }
 
-/* ==========================================================================
+/* =============================
    3. MODULES (Componentes BEM)
-   ========================================================================== */
+   ============================= */
 
 /* Header Component */
 .c-header {
-    background-image: linear-gradient(to bottom, var(--scd), var(--scm), var(--scl));
+    background-image: linear-gradient(to top, var(--scl), var(--scm));
     padding: 20px 0;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
@@ -59,21 +71,20 @@ body {
     color: var(--scl);
     font-size: 2.5rem;
     text-shadow: 2px 2px 4px var(--scd);
-    margin: 0;
 }
 
 .c-header__subtitle {
     font-family: var(--ft);
     font-size: 1.8rem;
     color: var(--scd);
-    margin: 0;
 }
 
 /* Article Component */
 .c-article__title {
     font-family: var(--ft);
     font-size: 2.3rem;
-    color: var(--scm);
+    text-align: left;
+    color: var(--scd);
     padding: 40px 20px 10px;
     line-height: 1.1;
 }
@@ -83,9 +94,12 @@ body {
     font-size: 1.1rem;
 }
 
+.c-article__author-name {
+    font-style: italic;
+}
+
 .c-article__author-name--corresponding {
     font-weight: bold;
-    font-style: italic;
 }
 
 /* Abstract Module */
@@ -95,22 +109,22 @@ body {
     margin: 30px 20px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 4px 4px 0px var(--scm);
 }
 
 /* Content Sections */
 .c-content-section__title {
     font-family: var(--ft);
-    background: linear-gradient(to right, var(--scm), transparent);
-    padding: 8px 20px;
+    background: linear-gradient(to right, var(--scd), transparent);
+    color: var(--scl);
+    padding: 5px 20px;
     margin: 30px 20px 10px;
 }
 
 .c-content-section__subtitle {
     font-family: var(--ft);
-    border-left: 5px solid var(--scm);
+    border-left: 5px solid var(--scd);
     padding-left: 15px;
-    margin: 20px;
+    margin: 5px 20px;
 }
 
 .c-content-section__text {
@@ -127,11 +141,11 @@ body {
 
 .c-references__title {
     font-family: var(--ft);
-    font-size: 1.8rem;
+    font-size: 1.2rem;
 }
 
 .c-references__list {
-    list-style-position: inside; /* Como você pediu antes */
+    list-style-position: inside;
 }
 
 .c-references__item {
@@ -145,7 +159,6 @@ body {
     color: var(--scl);
     text-align: center;
     padding: 20px;
-    margin-top: 50px;
 }
 
 /* ==========================================================================
