@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import url('#');
+
+:root{
+    /* Fontes */
+    --base-font: sans-serif;
+    --title-font: sans-serif;
+
+    /* Paleta */
+    --light-neutral-color: #FFFFFF;
+    --light-site-color: #F0F0F0;
+    --medium-site-color: #808080;
+    --dark-site-color: #010101;
+    --dark-neutral-color: #000000;
+}
+
+*, *::before, *::after {margin:0; padding:0; box-sizing: border-box;}
+
+body{
+    background-color: var(--light-site-color);
+    color: var(--dark-site-color);
+    font-family: var(--base-font);
+}
+
