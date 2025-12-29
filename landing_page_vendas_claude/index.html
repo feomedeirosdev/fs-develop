@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adquira nosso produto premium com entrega rápida e garantia estendida. Compra 100% segura e protegida pela LGPD.">
+    <meta name="keywords" content="produto premium, compra segura, entrega rápida">
+    <meta name="author" content="Sua Empresa Ltda">
+    <title>Produto Premium - Oferta Exclusiva | Sua Empresa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo">Sua Empresa</h1>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#produto" class="nav__link">Produto</a></li>
+                    <li class="nav__item"><a href="#beneficios" class="nav__link">Benefícios</a></li>
+                    <li class="nav__item"><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+                    <li class="nav__item"><a href="#comprar" class="nav__link nav__link--cta">Comprar Agora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <article class="hero" id="produto">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h2 class="hero__title">Transforme Sua Vida com o <strong>Produto Premium</strong></h2>
+                    <p class="hero__description">Descubra a solução definitiva que <em>milhares de clientes</em> já aprovaram. Qualidade excepcional, resultados comprovados.</p>
+                    <a href="#comprar" class="hero__cta">Garantir Meu Produto Agora</a>
+                </div>
+                <div class="hero__image">
+                    <img src="https://via.placeholder.com/600x400/4A90E2/FFFFFF?text=Produto+Premium" alt="Imagem ilustrativa do Produto Premium">
+                </div>
+            </div>
+        </article>
+
+        <section class="benefits" id="beneficios">
+            <div class="benefits__container">
+                <h2 class="benefits__title">Por Que Escolher Nosso Produto?</h2>
+                <div class="benefits__grid">
+                    <article class="benefit-card">
+                        <div class="benefit-card__icon">✓</div>
+                        <h3 class="benefit-card__title">Qualidade Garantida</h3>
+                        <p class="benefit-card__description">Certificação internacional e <strong>garantia estendida de 2 anos</strong> em todos os produtos.</p>
+                    </article>
+                    <article class="benefit-card">
+                        <div class="benefit-card__icon">⚡</div>
+                        <h3 class="benefit-card__title">Entrega Expressa</h3>
+                        <p class="benefit-card__description">Receba em até <em>48 horas</em> nas principais capitais do Brasil.</p>
+                    </article>
+                    <article class="benefit-card">
+                        <div class="benefit-card__icon">🔒</div>
+                        <h3 class="benefit-card__title">Compra Segura</h3>
+                        <p class="benefit-card__description">Ambiente protegido com <strong>certificado SSL</strong> e conformidade total com a LGPD.</p>
+                    </article>
+                    <article class="benefit-card">
+                        <div class="benefit-card__icon">↩️</div>
+                        <h3 class="benefit-card__title">Devolução Garantida</h3>
+                        <p class="benefit-card__description"><em>7 dias</em> para arrependimento, conforme Código de Defesa do Consumidor.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="depoimentos">
+            <div class="testimonials__container">
+                <h2 class="testimonials__title">O Que Nossos Clientes Dizem</h2>
+                <div class="testimonials__grid">
+                    <article class="testimonial-card">
+                        <p class="testimonial-card__text">"Produto excepcional! <strong>Superou todas as minhas expectativas</strong>. Recomendo muito!"</p>
+                        <p class="testimonial-card__author">— Maria Silva, São Paulo</p>
+                    </article>
+                    <article class="testimonial-card">
+                        <p class="testimonial-card__text">"Atendimento impecável e entrega rápida. <em>Voltarei a comprar</em> com certeza."</p>
+                        <p class="testimonial-card__author">— João Santos, Rio de Janeiro</p>
+                    </article>
+                    <article class="testimonial-card">
+                        <p class="testimonial-card__text">"A qualidade é visível. Vale <strong>cada centavo investido</strong>!"</p>
+                        <p class="testimonial-card__author">— Ana Costa, Brasília</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="purchase" id="comprar">
+            <div class="purchase__container">
+                <h2 class="purchase__title">Garanta Seu Produto Agora</h2>
+                <div class="purchase__content">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/400x300/4A90E2/FFFFFF?text=Produto" alt="Produto Premium" class="product-card__image">
+                        <h3 class="product-card__name">Produto Premium</h3>
+                        <p class="product-card__price"><span class="product-card__price--old">R$ 599,90</span> <strong class="product-card__price--new">R$ 399,90</strong></p>
+                        <p class="product-card__installment">ou <em>12x de R$ 39,99</em> sem juros</p>
+                        <button class="product-card__button" id="btnComprar">Comprar Agora</button>
+                        <ul class="product-card__features">
+                            <li>✓ Frete Grátis para todo Brasil</li>
+                            <li>✓ Garantia de 2 anos</li>
+                            <li>✓ Suporte técnico vitalício</li>
+                        </ul>
+                    </div>
+                    <aside class="purchase__summary" id="resumoCompra" style="display: none;">
+                        <h3 class="purchase__summary-title">Resumo da Compra</h3>
+                        <div class="purchase__summary-content">
+                            <p><strong>Produto:</strong> Produto Premium</p>
+                            <p><strong>Quantidade:</strong> 1 unidade</p>
+                            <p><strong>Subtotal:</strong> R$ 399,90</p>
+                            <p><strong>Frete:</strong> Grátis</p>
+                            <hr>
+                            <p class="purchase__summary-total"><strong>Total:</strong> R$ 399,90</p>
+                            <button class="purchase__summary-confirm">Confirmar Pedido</button>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="terms">
+            <div class="terms__container">
+                <h2 class="terms__title">Termos de Uso e Condições de Venda</h2>
+                <article class="terms__content">
+                    <h3>Identificação da Empresa</h3>
+                    <p><strong>Razão Social:</strong> Sua Empresa Comércio Eletrônico Ltda</p>
+                    <p><strong>CNPJ:</strong> 00.000.000/0001-00</p>
+                    <p><strong>Endereço:</strong> Rua Exemplo, 123, Centro, Fortaleza - CE, CEP 60000-000</p>
+                    <p><strong>E-mail:</strong> contato@suaempresa.com.br</p>
+                    <p><strong>Telefone:</strong> (85) 3000-0000</p>
+
+                    <h3>Descrição dos Serviços</h3>
+                    <p>A Sua Empresa oferece produtos de alta qualidade através de sua plataforma de <em>comércio eletrônico</em>. Os preços apresentados são válidos exclusivamente para compras realizadas neste site e podem sofrer alterações sem aviso prévio.</p>
+                    <p><strong>Formas de Pagamento:</strong> Cartão de crédito (Visa, Mastercard, Elo), PIX, boleto bancário e transferência eletrônica.</p>
+                    <p><strong>Prazos de Entrega:</strong> Varia conforme região, sendo de 2 a 10 dias úteis para capitais e até 15 dias úteis para demais localidades.</p>
+
+                    <h3>Limitações de Responsabilidade</h3>
+                    <p>O uso deste site implica na aceitação integral destes termos. A Sua Empresa não se responsabiliza por danos indiretos decorrentes do uso inadequado dos produtos. Todos os direitos de <strong>propriedade intelectual</strong>, incluindo marcas, logotipos e conteúdo, pertencem exclusivamente à empresa.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="privacy">
+            <div class="privacy__container">
+                <h2 class="privacy__title">Política de Privacidade (LGPD)</h2>
+                <article class="privacy__content">
+                    <h3>Dados Coletados</h3>
+                    <p>Coletamos as seguintes informações durante o processo de compra: <strong>nome completo, CPF, endereço de entrega, telefone, e-mail</strong> e dados de navegação através de cookies. Também podem ser coletados dados de pagamento processados por intermediadores certificados.</p>
+
+                    <h3>Finalidade do Tratamento</h3>
+                    <p>Os dados pessoais são utilizados exclusivamente para: processamento de pedidos, emissão de <em>notas fiscais eletrônicas</em>, entrega de produtos, comunicação sobre o status do pedido, suporte ao cliente e envio de ofertas promocionais (mediante consentimento).</p>
+
+                    <h3>Direitos do Titular</h3>
+                    <p>Conforme a <strong>Lei Geral de Proteção de Dados (LGPD)</strong>, você possui direito de: acessar seus dados, corrigi-los, solicitar a exclusão, revogar o consentimento, solicitar a portabilidade e se opor ao tratamento. Para exercer esses direitos, entre em contato com nosso Encarregado de Dados.</p>
+
+                    <h3>Encarregado de Dados (DPO)</h3>
+                    <p><strong>Nome:</strong> Carlos Encarregado</p>
+                    <p><strong>E-mail:</strong> dpo@suaempresa.com.br</p>
+                    <p><strong>Telefone:</strong> (85) 3000-0001</p>
+
+                    <h3>Compartilhamento de Dados</h3>
+                    <p>Seus dados podem ser compartilhados com <em>transportadoras, processadores de pagamento e autoridades fiscais</em>, sempre respeitando a finalidade da coleta e a legislação vigente.</p>
+
+                    <h3>Segurança</h3>
+                    <p>Implementamos medidas técnicas de segurança, incluindo <strong>criptografia SSL, firewalls e controles de acesso</strong>, para proteger suas informações contra acessos não autorizados.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="returns">
+            <div class="returns__container">
+                <h2 class="returns__title">Política de Trocas e Devoluções</h2>
+                <article class="returns__content">
+                    <h3>Direito de Arrependimento</h3>
+                    <p>Conforme o <strong>Código de Defesa do Consumidor (Art. 49)</strong>, você tem o direito de desistir da compra em até <em>7 dias corridos</em> a partir da data de recebimento do produto, sem necessidade de justificativa. O valor pago será reembolsado integralmente, incluindo o frete de ida. O custo do frete de retorno será de responsabilidade da loja.</p>
+
+                    <h3>Troca por Defeito ou Vício</h3>
+                    <p><strong>Produtos duráveis:</strong> 90 dias de garantia legal.</p>
+                    <p><strong>Produtos não duráveis:</strong> 30 dias de garantia legal.</p>
+                    <p>Além da garantia legal, oferecemos <em>garantia estendida de 2 anos</em> contra defeitos de fabricação. Em caso de defeito, o produto será reparado, substituído ou o valor será devolvido, conforme sua preferência.</p>
+
+                    <h3>Procedimento para Devolução</h3>
+                    <p>Para solicitar devolução ou troca:</p>
+                    <ol>
+                        <li>Entre em contato através do e-mail <strong>trocas@suaempresa.com.br</strong> ou pelo telefone (85) 3000-0002</li>
+                        <li>Informe o número do pedido e o motivo da devolução</li>
+                        <li>Aguarde o código de autorização de postagem</li>
+                        <li>Embale o produto nas mesmas condições em que foi recebido</li>
+                        <li>Envie para o endereço informado</li>
+                    </ol>
+                    <p>O prazo para processamento do reembolso é de até <em>10 dias úteis</em> após o recebimento do produto devolvido.</p>
+
+                    <h3>Produtos Não Aceitos para Troca</h3>
+                    <p>Não aceitamos devoluções de produtos que foram utilizados, danificados por mau uso, ou que estejam fora da embalagem original (exceto para exercício do direito de arrependimento).</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact__container">
+                <h2 class="contact__title">Canal de Atendimento (SAC)</h2>
+                <article class="contact__content">
+                    <p>Estamos à disposição para esclarecer dúvidas, receber reclamações e oferecer suporte:</p>
+                    <ul class="contact__list">
+                        <li><strong>E-mail:</strong> sac@suaempresa.com.br</li>
+                        <li><strong>Telefone:</strong> (85) 3000-0003 (Seg. a Sex., 8h às 18h)</li>
+                        <li><strong>WhatsApp:</strong> (85) 99000-0000</li>
+                        <li><strong>Chat Online:</strong> Disponível neste site durante horário comercial</li>
+                    </ul>
+                    <p>Tempo médio de resposta: <em>até 24 horas em dias úteis</em>.</p>
+                    <p>Caso não fique satisfeito com o atendimento, você pode registrar reclamação no site <strong>consumidor.gov.br</strong> ou no Procon de sua cidade.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__info">
+                <h3 class="footer__brand">Sua Empresa</h3>
+                <p>CNPJ: 00.000.000/0001-00</p>
+                <p>Rua Exemplo, 123 - Fortaleza/CE</p>
+                <p>© 2025 Todos os direitos reservados</p>
+            </div>
+            <div class="footer__links">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="#terms">Termos de Uso</a></li>
+                    <li><a href="#privacy">Política de Privacidade</a></li>
+                    <li><a href="#returns">Trocas e Devoluções</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <h4>Redes Sociais</h4>
+                <p>Acompanhe nossas novidades</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
