@@ -63,7 +63,7 @@ yarn-error.log*
 # Arquivos de imagens (temporários, caches ou grandes que não são assets primários)
 # Se suas imagens são ASSETS (que DEVEM ser versionados), remova estas linhas.
 # Caso contrário, servem para ignorar imagens criadas automaticamente ou caches.
-*.png
+# *.png
 *.jpg
 *.gif
 *.png.bak
